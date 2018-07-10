@@ -1,0 +1,9 @@
+@import "bourbon";
+
+ul {
+  li {
+    a.active {
+      font-weight: bolder;
+    }
+  }
+}
