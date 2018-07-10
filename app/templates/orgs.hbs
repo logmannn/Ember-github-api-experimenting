@@ -1,10 +1,11 @@
 <h2>My Favorite Orgs</h2>
 
+<span>Click Meeee!</span>
+
 <ul>
   {{#each content as |org|}}
-  <li>{{link-to org.id 'org' org.id}}</li>
+    <li><span {{action 'favorite' org.id}}>[Favorite]</span> {{link-to org.id 'org' org.id}}</li>
   {{/each}}
 </ul>
 
-<p {{action 'thingWasClicked' 123}}>test</p>
 {{outlet}}
