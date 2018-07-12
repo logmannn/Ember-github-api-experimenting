@@ -20,7 +20,6 @@ export default Route.extend({
   },
 
   model() {
-
     return [
       {id: 'emberjs'},
       {id: 'ember-cli'},
