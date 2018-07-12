@@ -1,3 +1,13 @@
 {{outlet}}
 
 <p>Issues</p>
+
+<ul>
+  {{#each content as |issue|}}
+    <li>
+      <a href='{{issue.html_url}}'>
+        {{issue.title}}
+      </a>
+    </li>
+  {{/each}}
+</ul>

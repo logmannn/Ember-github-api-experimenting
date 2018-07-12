@@ -4,9 +4,13 @@ import { inject as service } from '@ember/service';
 export default Route.extend({
   favorites: service(),
 
-  setupController(controller) {
-    this._super(...arguments);
-    controller.set('records', this.get('favorites.items'));
+  // setupController(controller) {
+  //   this._super(...arguments);
+  //   controller.set('favorites', this.get('favorites.items'));
+  // },
+
+  init(...args) {
+    this._super(...args);
   },
 
   actions: {

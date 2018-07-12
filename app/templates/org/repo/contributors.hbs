@@ -1,3 +1,14 @@
 {{outlet}}
 
 <p>Contributors</p>
+
+<ul>
+  {{#each content as |contributor|}}
+    <li>
+      <a href='{{contributor.html_url}}'>
+        {{contributor.login}}
+        <img src='{{contributor.avatar_url}}' alt='' class='' height='48'>
+      </a>
+    </li>
+  {{/each}}
+</ul>

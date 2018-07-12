@@ -1,6 +1,8 @@
 {{link-to 'Back to list of orgs' 'orgs'}}
-<h4>Facebook</h4>
+{{log model}}
+<h4>{{model.name}} <a href='{{model.html_url}}' target='_blank'>Github</a></h4>
 
+<img src='{{model.avatar_url}}' alt='avatar url' class='avatar_url' height='48'>
 
 <ul>
   {{#each items as |item|}}
